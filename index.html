@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Identifier</title>
+    <link rel="shortcut icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAAf1JREFUWEft2M3LDlEYx/HPUyxkY4dSbJRECqVssLBE2XkPZWvnb2AnO6W8ROxQlkJZKG8LzxMLC0KRjSxIUXTVfWueaebMmbnnmZCpezPnus7ve//OmfNyTal/DuAEVmFeIq5t0w+8wClcKSdP1fR2EBfbKnWI31+GqgOaxpoOAm1TnmFdMakO6HvPw1QHGsM3PwfoZ8ZfvYuHibhN2JrRzyxT6hzKAVqEzwnBaP80JFB8JbcTgttHX2kTU28ONQnltv8HanLq33foDq7iNVZgL7Y12VJo79Wh4zhTIR7vT2dC9QZ0AYcTopcQG3TT0xvQBjxNqG3EoyYa9Aa0AN8SgtH+dUigxfiYEFyC90MCHcH5hOBRnBsS6C1inlS5FO49xrIhgULrJY7hXkE41qCzWJkBEyG9Teqi3jvELxzJcaWYOydAmWZUhvUG9AQP8KVCZiE2Y30G6cRAr3AI9zPEtoxuL8sTsRMBvUGclT9kwIxDlo7O3nVzayKgHbjVAmYcuhM3a/I6A4U7cbzIuQCUtUM08qtc6gx0Hbs7uDNOuYFdFfmdgWLxa3PwKq81cY+LSV7l3u93be9lMy0n9FgoNtq6q3lnhyYYrWTq3wn0xxUbokyydq7GqNBvdjlmHy4PALQH12q3/hJAQEVJb3XPtaKoCT3HydF9bpbsL7FbYSWAmWXyAAAAAElFTkSuQmCC"
+        type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h3 class="Identifier">
+            Identifier
+        </h3>
+        <button id="createUser" onclick="userCreator()">
+            <img  src="./images/Createuser.svg" alt="Criar seu crachá" title="Criar  crachá">
+        </button>
+    </header>
+    <main>
+        </section>
+        <section class="userInformation">
+            <img id="userImage" src="" alt="Foto do Usuário" title="Foto Usuário">
+            <p>
+                <h2 id="userName" aria-label="Nome">Nome</h2>
+                <a id="userLink" href="" target="_blank">
+                    <img id="github" src="images/Userpicture.svg" alt="github">
+                    <span id="NameGit">Nome do Github</span>
+                </a>
+            </p>
+            <p id="Bio" alt="Biografia">Bio será escrita aqui</p>
+        </section>
+        <div class="Create">
+            <div class="createContent">
+                <p> <input type="text" placeholder="Nome do seu Github" id="Nameuser"></p>
+                <p>
+                    <a href="#">
+                        <button class="button" id="Close" onclick=Fechar()>Fechar</button>
+                    </a>
+                    <button class="button" type="submit" id="creating" onclick=Searching()>Criar</button>
+                </p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <h4>
+            identifier
+        </h4>
+        <a href="https://github.com/ThaylonHani" target="_blank">Hani</a>
+    </footer>
+    <script src="./main.js"></script>
+</body>
+
+</html>

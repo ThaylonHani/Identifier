@@ -1,0 +1,204 @@
+/*GLOBAL*/
+
+* {
+    margin: 0
+}
+
+body,
+html {
+    height: 100%;
+}
+
+body {
+    background-color: #D8BFD8;
+    width: 100%;
+    overflow: hidden;
+}
+
+::-webkit-input-placeholder {
+    color: black;
+    font-weight: italic;
+}
+
+textarea:focus,
+input:focus,
+select:focus {
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+}
+
+:root {
+    --input-color: #FF6347;
+    --font-color2: #87CEEB;
+    --page-color: #8B0000;
+    --font-color: #A52A2A;
+    --font-color3: #00008B;
+}
+
+
+/*MAIN*/
+
+header {
+    display: flex;
+    background-color: var(--page-color);
+    height: 3rem;
+    cursor: default;
+    justify-content: space-between;
+}
+
+#createUser {
+    background-color: var(--page-color);
+    border: none;
+    cursor: pointer;
+    display: flex;
+}
+
+.Identifier {
+    color: var(--font-color2)
+}
+
+
+/*input info*/
+
+.Create {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.Create.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.createContent {
+    display: flex;
+    width: 70vw;
+    height: 50vw;
+    background-color: whitesmoke;
+    justify-content: center;
+    align-items: center;
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+}
+
+input {
+    border-radius: 50px;
+    display: flex;
+    border: none;
+    padding: 1rem;
+}
+
+.button {
+    display: flex;
+    cursor: pointer;
+    border: none;
+    border-radius: 50px;
+    background-color: white;
+    padding: 0.5em;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.Create a {
+    text-decoration: none;
+}
+
+#Close {
+    color: red;
+    border: double 5px red;
+}
+
+#creating {
+    color: green;
+    background-color: lightgreen;
+    width: 10rem;
+    justify-content: center;
+}
+
+
+/*user information*/
+
+#userImage {
+    display: grid;
+    margin-left: auto;
+    margin-right: auto;
+    width: 9rem;
+    margin-top: 3rem;
+    clip-path: circle(50% at 50% 50%);
+}
+
+#userName {
+    display: grid;
+    justify-content: center;
+    color: var(--font-color);
+    cursor: default;
+    margin-top: -px
+}
+
+#github {
+    width: 2rem;
+}
+
+#userLink {
+    display: flex;
+    width: fit-content;
+    align-items: end;
+    text-decoration: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#NameGit:hover {
+    transition: all;
+    transition-duration: 0.5s;
+    color: var(--button-color);
+    border-bottom: 3px solid var(--button-color);
+}
+
+#NameGit {
+    color: var(--font-color);
+    border-bottom: 3px dotted var(--font-color);
+}
+
+#Bio {
+    color: #B22222;
+    font-weight: bold;
+    cursor: default;
+    margin-top: 2rem;
+    width: 50%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: top;
+    margin-top: 2.9rem;
+    background-color: var(--page-color);
+    color: var(--font-color2);
+    height: calc(100vw);
+    cursor: default;
+}
+
+footer a {
+    text-decoration: none;
+    color: var(--font-color);
+}
+
+footer a:hover {
+    transition: all 0.5s;
+    color: var(--font-color2);
+    border-bottom: 2px solid var(--font-color2);
+}
